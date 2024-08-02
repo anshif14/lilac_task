@@ -1,69 +1,75 @@
 import 'dart:convert';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:lilac_task/common/contants/Palette.dart';
 import 'package:lilac_task/common/contants/image_constants.dart';
+import 'package:lilac_task/core/API%20services/api_services.dart';
 import 'package:lilac_task/features/featured%20Course/screens/featured_course_screen.dart';
 import 'package:lilac_task/main.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  ConsumerState<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginScreenState extends ConsumerState<LoginScreen> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
-  Future<void> login() async {
-    // ... Handle login logic using http package
+  // Future<void> login() async {
+  //   // ... Handle login logic using http package
+  //
+  //   final response = await http.post(
+  //     Uri.parse(
+  //         'https://test.gslstudent.lilacinfotech.com/api/lead/auth/login'),
+  //     body: jsonEncode({
+  //       'userField': emailController.text,
+  //       'password': passwordController.text,
+  //     }),
+  //     headers: <String, String>{
+  //       'Content-Type': 'application/json; charset=UTF-8',
+  //     },
+  //   );
+  //
+  //   // print(response.statusCode);
+  //
+  //   // Successful login, store access token
+  //
+  //   if (response.statusCode == 201) {
+  //     final data = jsonDecode(response.body);
+  //     // print(data);
+  //
+  //     final accessToken = data['data']['auth']['access_token'];
+  //     // Store accessToken securely
+  //     print('Login successful: $accessToken');
+  //
+  //     Navigator.push(
+  //       context,
+  //       CupertinoPageRoute(
+  //         builder: (context) => FeaturedCourseScreen(
+  //           accessToken: accessToken,
+  //         ),
+  //       ),
+  //       // (route) => false,
+  //     );
+  //   } else {
+  //     final data = jsonDecode(response.body);
+  //
+  //     ScaffoldMessenger.of(context)
+  //         .showSnackBar(SnackBar(content: Text(data['message'])));
+  //   }
+  //
+  //   ///=====================================///
+  // }
 
-    final response = await http.post(
-      Uri.parse(
-          'https://test.gslstudent.lilacinfotech.com/api/lead/auth/login'),
-      body: jsonEncode({
-        'userField': emailController.text,
-        'password': passwordController.text,
-      }),
-      headers: <String, String>{
-        'Content-Type': 'application/json; charset=UTF-8',
-      },
-    );
-
-    // print(response.statusCode);
-
-    // Successful login, store access token
-
-    if (response.statusCode == 201) {
-      final data = jsonDecode(response.body);
-      // print(data);
-
-      final accessToken = data['data']['auth']['access_token'];
-      // Store accessToken securely
-      print('Login successful: $accessToken');
-
-      Navigator.push(
-        context,
-        CupertinoPageRoute(
-          builder: (context) => FeaturedCourseScreen(
-            accessToken: accessToken,
-          ),
-        ),
-        // (route) => false,
-      );
-    } else {
-      final data = jsonDecode(response.body);
-
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text(data['message'])));
-    }
-
-    ///=====================================///
+  loginFunc(){
+    ref.watch(apiServiceProvider).login(emailController.text, passwordController.text, context);
   }
 
   bool _rememberMe = false;
@@ -213,7 +219,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           )),
                           backgroundColor:
                               const WidgetStatePropertyAll(ColorPalette.primary)),
-                      onPressed: login,
+                      onPressed: (){
+                        loginFunc();
+                      },
                       child: const Text(
                         "Login",
                         style: TextStyle(

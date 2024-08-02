@@ -23,7 +23,7 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
     height: 10,
   );
 
-  Widget divider =  Divider(
+  Widget divider = Divider(
     color: ColorPalette.grey1.withOpacity(0.2),
   );
 
@@ -166,8 +166,8 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                       width: w * 0.8,
                       child: const Text(
                         "BSc (Hons) Construction Management (top-up) BSc (Hons) Construction ",
-                        style:
-                            TextStyle(fontWeight: FontWeight.w900, fontSize: 16),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w900, fontSize: 16),
                       ),
                     ),
                     gap,
@@ -223,13 +223,14 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                             debugPrint("Tab changed: $index");
                           },
                           onAddTabMoveTo: MoveToTab.last,
-                          labelStyle: const TextStyle(color: ColorPalette.secondary),
+                          labelStyle:
+                              const TextStyle(color: ColorPalette.secondary),
                           // backIcon: Icon(Icons.keyboard_double_arrow_left),
                           // nextIcon: Icon(Icons.keyboard_double_arrow_right),
                           showBackIcon: false,
                           showNextIcon: false,
                           leading: const SizedBox(),
-        
+
                           trailing: const SizedBox(),
                         ),
                       ),
@@ -241,30 +242,46 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: Icon(CupertinoIcons.checkmark_alt,color: Colors.white,),
+                          child: Icon(
+                            CupertinoIcons.checkmark_alt,
+                            color: Colors.white,
+                          ),
                         ),
                         Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Eligibility",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Eligibility",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         )
                       ],
                     ),
-        gap,
+                    gap,
                     Container(
                       width: w,
-                      height: h*0.06,
+                      height: h * 0.06,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(w*0.3),
+                        borderRadius: BorderRadius.circular(w * 0.3),
                         color: ColorPalette.grey5,
-        
                       ),
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Center(
                           child: Row(
                             children: [
-                              Text("HSE or SSE:",style: TextStyle(fontSize: 16),),
-                              Text(" 60",style: TextStyle(fontSize: 16,color: ColorPalette.secondary),),
+                              Text(
+                                "HSE or SSE:",
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Text(
+                                " 60",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: ColorPalette.secondary),
+                              ),
                             ],
                           ),
                         ),
@@ -273,33 +290,44 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                     gap,
                     Container(
                       width: w,
-                      height: h*0.06,
+                      height: h * 0.06,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(w*0.3),
+                        borderRadius: BorderRadius.circular(w * 0.3),
                         color: ColorPalette.grey5,
-        
                       ),
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Center(
                           child: Row(
                             children: [
-                              Text("IELTS:",style: TextStyle(fontSize: 16),),
-                              Text(" 60",style: TextStyle(fontSize: 16,color: ColorPalette.secondary),),
-                              Text("/ ENGLISH for HSE or SSE:",style: TextStyle(fontSize: 16),),
-                              Text(" 65",style: TextStyle(fontSize: 16,color: ColorPalette.secondary),),
-        
-        
+                              Text(
+                                "IELTS:",
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Text(
+                                " 60",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: ColorPalette.secondary),
+                              ),
+                              Text(
+                                "/ ENGLISH for HSE or SSE:",
+                                style: TextStyle(fontSize: 16),
+                              ),
+                              Text(
+                                " 65",
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    color: ColorPalette.secondary),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
                     gap,
-        
-                    divider
-        ,gap,
-        
+                    divider,
+                    gap,
                     const Row(
                       children: [
                         // CircleAvatar(
@@ -309,41 +337,49 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                         // ),
 
                         CircleAvatar(
-    radius: 18,
-    backgroundColor: ColorPalette.secondary,
-    child: Icon(CupertinoIcons.checkmark_alt,color: Colors.white,),
-    ),
+                          radius: 18,
+                          backgroundColor: ColorPalette.secondary,
+                          child: Icon(
+                            CupertinoIcons.checkmark_alt,
+                            color: Colors.white,
+                          ),
+                        ),
                         Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Course Duration",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Course Duration",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         )
                       ],
                     ),
                     Container(
                       width: w,
-                      height: h*0.06,
+                      height: h * 0.06,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(w*0.3),
+                        borderRadius: BorderRadius.circular(w * 0.3),
                         color: ColorPalette.grey5,
-        
                       ),
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Center(
                           child: Row(
                             children: [
-                              Text("1 Year and 6 Months",style: TextStyle(fontSize: 16),),
-        
+                              Text(
+                                "1 Year and 6 Months",
+                                style: TextStyle(fontSize: 16),
+                              ),
                             ],
                           ),
                         ),
                       ),
                     ),
                     gap,
-
-                    divider
-                    ,gap,
-
+                    divider,
+                    gap,
                     Row(
                       children: [
                         // CircleAvatar(
@@ -355,15 +391,20 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.info_icon,),
+                          child: SvgPicture.asset(
+                            ImageConstants.info_icon,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Course Intakes",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Course Intakes",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-
-
-
                       ],
                     ),
                     gap,
@@ -371,19 +412,20 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                       children: [
                         Container(
                           // width: w,
-                          height: h*0.06,
+                          height: h * 0.06,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(w*0.3),
+                            borderRadius: BorderRadius.circular(w * 0.3),
                             color: ColorPalette.grey5,
-
                           ),
                           child: const Padding(
                             padding: EdgeInsets.all(12.0),
                             child: Center(
                               child: Row(
                                 children: [
-                                  Text("2023 January",style: TextStyle(fontSize: 16),),
-
+                                  Text(
+                                    "2023 January",
+                                    style: TextStyle(fontSize: 16),
+                                  ),
                                 ],
                               ),
                             ),
@@ -393,19 +435,20 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
                             // width: w,
-                            height: h*0.06,
+                            height: h * 0.06,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(w*0.3),
+                              borderRadius: BorderRadius.circular(w * 0.3),
                               color: ColorPalette.grey5,
-
                             ),
                             child: const Padding(
                               padding: EdgeInsets.all(12.0),
                               child: Center(
                                 child: Row(
                                   children: [
-                                    Text("2023 March",style: TextStyle(fontSize: 16),),
-
+                                    Text(
+                                      "2023 March",
+                                      style: TextStyle(fontSize: 16),
+                                    ),
                                   ],
                                 ),
                               ),
@@ -414,10 +457,9 @@ class _CourseDetailsScreenState extends State<CourseDetailsScreen> {
                         ),
                       ],
                     ),
-gap,
+                    gap,
                     divider,
                     gap,
-
                     Row(
                       children: [
                         // CircleAvatar(
@@ -429,28 +471,37 @@ gap,
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.university_icon_white,height: 16,),
+                          child: SvgPicture.asset(
+                            ImageConstants.university_icon_white,
+                            height: 16,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("University",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "University",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-
-
-
                       ],
                     ),
-
                     gap,
-                    const Text("Lancaster University",style: TextStyle(color: ColorPalette.grey1,fontSize: 16,fontWeight: FontWeight.w900),),
-                    gap,
-                    const Text("Academically, b.sc (hons) is regarded as being a more standard degree as compared to b.sc (general). Prestigious universities may also demand a rigorous dissertation from every student for completion of the B.Sc. (Hons) course."
-                    ,style: TextStyle(
-                        color: ColorPalette.black_grey
-                      ),
+                    const Text(
+                      "Lancaster University",
+                      style: TextStyle(
+                          color: ColorPalette.grey1,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w900),
                     ),
                     gap,
-
+                    const Text(
+                      "Academically, b.sc (hons) is regarded as being a more standard degree as compared to b.sc (general). Prestigious universities may also demand a rigorous dissertation from every student for completion of the B.Sc. (Hons) course.",
+                      style: TextStyle(color: ColorPalette.black_grey),
+                    ),
+                    gap,
                     Row(
                       children: [
                         SvgPicture.asset(
@@ -463,15 +514,15 @@ gap,
                         Expanded(
                           child: Container(
                               child: const Text(
-                                "London, United Kingdom",
-                                style: TextStyle(
-                                    color: ColorPalette.grey1, fontSize: 14),
-                                overflow: TextOverflow.ellipsis,
-                              )),
+                            "London, United Kingdom",
+                            style: TextStyle(
+                                color: ColorPalette.grey1, fontSize: 14),
+                            overflow: TextOverflow.ellipsis,
+                          )),
                         )
                       ],
                     ),
-gap,
+                    gap,
                     Row(
                       children: [
                         SvgPicture.asset(
@@ -484,23 +535,21 @@ gap,
                         Expanded(
                           child: Container(
                               child: const Text(
-                                "5th",
-                                style: TextStyle(
-                                    color: ColorPalette.grey1, fontSize: 14),
-                                overflow: TextOverflow.ellipsis,
-                              )),
+                            "5th",
+                            style: TextStyle(
+                                color: ColorPalette.grey1, fontSize: 14),
+                            overflow: TextOverflow.ellipsis,
+                          )),
                         )
                       ],
                     ),
                     gap,
-
                     Container(
                       width: w,
-                      height: h*0.06,
+                      height: h * 0.06,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(w*0.3),
+                        borderRadius: BorderRadius.circular(w * 0.3),
                         color: ColorPalette.grey5,
-
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -511,10 +560,19 @@ gap,
                               CircleAvatar(
                                 radius: 15,
                                 backgroundColor: ColorPalette.grey1,
-                                child: SvgPicture.asset(ImageConstants.download_icon,height: 16,),
-                              ),const SizedBox(width: 5,),
-                              const Text("Download University Brochure",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w900),),
-
+                                child: SvgPicture.asset(
+                                  ImageConstants.download_icon,
+                                  height: 16,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Text(
+                                "Download University Brochure",
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w900),
+                              ),
                             ],
                           ),
                         ),
@@ -523,7 +581,6 @@ gap,
                     gap,
                     divider,
                     gap,
-
                     Row(
                       children: [
                         // CircleAvatar(
@@ -535,34 +592,35 @@ gap,
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.syllabus_icon,height: 18,),
+                          child: SvgPicture.asset(
+                            ImageConstants.syllabus_icon,
+                            height: 18,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Course Syllabus",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Course Syllabus",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-
-
-
                       ],
                     ),
                     gap,
                     const Text(
-                      "Academically, b.sc (hons) is regarded as being a more standard degree as compared to b.sc (general). Prestigious universities may also demand a rigorous dissertation from every student for completion of the B.Sc. (Hons) course."
-                      ,style: TextStyle(
-                          color: ColorPalette.black_grey
-                      ),
+                      "Academically, b.sc (hons) is regarded as being a more standard degree as compared to b.sc (general). Prestigious universities may also demand a rigorous dissertation from every student for completion of the B.Sc. (Hons) course.",
+                      style: TextStyle(color: ColorPalette.black_grey),
                     ),
-
                     gap,
-
                     Container(
                       width: w,
-                      height: h*0.06,
+                      height: h * 0.06,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(w*0.3),
+                        borderRadius: BorderRadius.circular(w * 0.3),
                         color: ColorPalette.grey5,
-
                       ),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -573,10 +631,19 @@ gap,
                               CircleAvatar(
                                 radius: 15,
                                 backgroundColor: ColorPalette.grey1,
-                                child: SvgPicture.asset(ImageConstants.download_icon,height: 16,),
-                              ),const SizedBox(width: 5,),
-                              const Text("Download Course Syllabus",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w900),),
-
+                                child: SvgPicture.asset(
+                                  ImageConstants.download_icon,
+                                  height: 16,
+                                ),
+                              ),
+                              const SizedBox(
+                                width: 5,
+                              ),
+                              const Text(
+                                "Download Course Syllabus",
+                                style: TextStyle(
+                                    fontSize: 16, fontWeight: FontWeight.w900),
+                              ),
                             ],
                           ),
                         ),
@@ -585,196 +652,271 @@ gap,
                     gap,
                     divider,
                     gap,
-
                     Row(
                       children: [
-
-
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.fee_icon,height: 18,),
+                          child: SvgPicture.asset(
+                            ImageConstants.fee_icon,
+                            height: 18,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Placement",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Placement",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-                        
-
-
-
                       ],
                     ),
-                    const Text("Placement assistance provided",style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w900,color: ColorPalette.black_grey),),
-                    const Text("Available for leading firms like ABCD, EFGH",style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,color: ColorPalette.black_grey),),
+                    const Text(
+                      "Placement assistance provided",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w900,
+                          color: ColorPalette.black_grey),
+                    ),
+                    const Text(
+                      "Available for leading firms like ABCD, EFGH",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: ColorPalette.black_grey),
+                    ),
                     gap,
                     divider,
                     gap,
                     Row(
                       children: [
-
-
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.fee_icon,height: 18,),
+                          child: SvgPicture.asset(
+                            ImageConstants.fee_icon,
+                            height: 18,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Total fee",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Total fee",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-
-
-
-
                       ],
                     ),
-gap,
-Container(
-decoration: BoxDecoration(
-  color: ColorPalette.grey5,
-  borderRadius: BorderRadius.circular(15)
-),
-  child: Padding(
-    padding: const EdgeInsets.all(25.0),
-    child: Column(
-      children: [
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Term",style: TextStyle(color: ColorPalette.grey1,fontWeight: FontWeight.w900,fontSize: 16),),
-              Text("Fee",style: TextStyle(color: ColorPalette.grey1,fontWeight: FontWeight.w900,fontSize: 16),),
-            ],
-          ),
-        ),
-
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("First Year",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-              Text("₹50000",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-            ],
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Second Year",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-              Text("₹50000",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-            ],
-          ),
-        ),
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Third Year",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-              Text("₹50000",style: TextStyle(color: ColorPalette.black_grey,fontWeight: FontWeight.w400,fontSize: 16),),
-            ],
-          ),
-        ),
-gap,
-        divider,
-        gap,
-
-
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text("Total",style: TextStyle(color: ColorPalette.secondary,fontWeight: FontWeight.w900,fontSize: 16),),
-              Text("₹150000",style: TextStyle(color: ColorPalette.secondary,fontWeight: FontWeight.w900,fontSize: 16),),
-            ],
-          ),
-        ),
-
-      ],
-    ),
-  ),
-),
                     gap,
-
-
+                    Container(
+                      decoration: BoxDecoration(
+                          color: ColorPalette.grey5,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: Padding(
+                        padding: const EdgeInsets.all(25.0),
+                        child: Column(
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Term",
+                                    style: TextStyle(
+                                        color: ColorPalette.grey1,
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "Fee",
+                                    style: TextStyle(
+                                        color: ColorPalette.grey1,
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 16),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "First Year",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "₹50000",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Second Year",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "₹50000",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Third Year",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "₹50000",
+                                    style: TextStyle(
+                                        color: ColorPalette.black_grey,
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 16),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            gap,
+                            divider,
+                            gap,
+                            const Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Total",
+                                    style: TextStyle(
+                                        color: ColorPalette.secondary,
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 16),
+                                  ),
+                                  Text(
+                                    "₹150000",
+                                    style: TextStyle(
+                                        color: ColorPalette.secondary,
+                                        fontWeight: FontWeight.w900,
+                                        fontSize: 16),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    gap,
                     Row(
                       children: [
-
-
                         CircleAvatar(
                           radius: 18,
                           backgroundColor: ColorPalette.secondary,
-                          child: SvgPicture.asset(ImageConstants.documents_icon,height: 18,),
+                          child: SvgPicture.asset(
+                            ImageConstants.documents_icon,
+                            height: 18,
+                          ),
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child: Text("Documents Required",style: TextStyle(color: ColorPalette.primary,fontWeight: FontWeight.w700,fontSize: 16),),
+                          child: Text(
+                            "Documents Required",
+                            style: TextStyle(
+                                color: ColorPalette.primary,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 16),
+                          ),
                         ),
-
-
-
-
                       ],
                     ),
-
-Container(
-  width: w,
-  decoration: BoxDecoration(
-      color: ColorPalette.grey5,
-      borderRadius: BorderRadius.circular(15)
-  ),
-  child: const Column(
-    crossAxisAlignment: CrossAxisAlignment.start  ,
-    children: [
-      Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text("Passport",style: TextStyle(
-
-            fontSize: 16,
-            color: ColorPalette.black_grey),),
-      ),
-      Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text("Previous Course Certificates",style: TextStyle(
-
-            fontSize: 16,
-            color: ColorPalette.black_grey),),
-      ),
-      Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text("Reference Letter",style: TextStyle(
-
-            fontSize: 16,
-            color: ColorPalette.black_grey),),
-      ),
-
-
-    ],
-  ),
-),
-                    gap,gap,
+                    Container(
+                      width: w,
+                      decoration: BoxDecoration(
+                          color: ColorPalette.grey5,
+                          borderRadius: BorderRadius.circular(15)),
+                      child: const Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              "Passport",
+                              style: TextStyle(
+                                  fontSize: 16, color: ColorPalette.black_grey),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              "Previous Course Certificates",
+                              style: TextStyle(
+                                  fontSize: 16, color: ColorPalette.black_grey),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              "Reference Letter",
+                              style: TextStyle(
+                                  fontSize: 16, color: ColorPalette.black_grey),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    gap,
+                    gap,
                     Center(
                       child: Container(
                           width: w * 0.9,
                           height: h * 0.07,
                           child: ElevatedButton(
                               style: ButtonStyle(
-                                  shape: WidgetStatePropertyAll(RoundedRectangleBorder(
+                                  shape: WidgetStatePropertyAll(
+                                      RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
                                   )),
-                                  backgroundColor:
-                                  const WidgetStatePropertyAll(ColorPalette.primary)),
-                              onPressed: (){},
+                                  backgroundColor: const WidgetStatePropertyAll(
+                                      ColorPalette.primary)),
+                              onPressed: () {},
                               child: const Text(
                                 "Get Admission",
                                 style: TextStyle(
@@ -784,7 +926,6 @@ Container(
                                 ),
                               ))),
                     ),
-
                   ],
                 ),
               ),
